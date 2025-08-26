@@ -22,10 +22,12 @@ Este projeto está configurado para deploy automático no Railway.
 
 - ✅ Imagem do Japão como fundo
 - ✅ Imagem Hitomi posicionada sobre o Japão
-- ✅ Animação de bomba caindo
-- ✅ Efeito de explosão
+- ✅ Animação de bomba caindo em loop automático
+- ✅ Explosão em tela cheia super intensa
+- ✅ Múltiplas partículas de fogo e raios
+- ✅ Flash branco que toma toda a tela
 - ✅ Interface responsiva
-- ✅ Botão para iniciar animação
+- ✅ Loop contínuo automático (sem botões)
 
 ## 🛠️ Desenvolvimento Local
 
