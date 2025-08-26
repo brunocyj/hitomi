@@ -1,14 +1,15 @@
-# Use Node.js 18 Alpine
-FROM node:18-alpine
+# Use Node.js 18
+FROM node:18
 
 # Set working directory
 WORKDIR /app
 
-# Copy package files
-COPY package*.json ./
+# Copy package.json
+COPY package.json ./
 
-# Install dependencies
-RUN npm ci --silent
+# Clear npm cache and install dependencies
+RUN npm cache clean --force
+RUN npm install
 
 # Copy source code
 COPY . .
@@ -19,5 +20,5 @@ RUN npm run build
 # Expose port
 EXPOSE 3000
 
-# Start command - serve static files from dist
+# Start command
 CMD ["npm", "start"]
